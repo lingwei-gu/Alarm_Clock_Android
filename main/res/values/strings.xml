@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="sleep_cycles">Sleep Cycles</string>
+    <string name="i_have_to_wake_up_at">I have to wake up at:</string>
+
+    <string-array name="hours_spinner">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="min_spinner">
+        <item>00</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+
+
+    <string-array name="am_pm_spinner">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+</resources>
