@@ -7,10 +7,12 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/layoutA"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/logo"
@@ -29,6 +31,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -37,25 +40,44 @@
             android:textAlignment="center"
             android:textColor="#673AB7"
             android:textSize="24sp"
-            android:typeface="serif"/>
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:id="@+id/layoutB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <!-- android:paddingStart="110dp"
+        android:paddingEnd ="110dp"-->
 
 
-        <Spinner
-            android:id="@+id/hours_spinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/hours_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center" />
 
-        <Spinner
-            android:id="@+id/min_spinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/min_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center" />
 
-        <Spinner
-            android:id="@+id/am_pm_spinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/am_pm_spinner"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center" />
+
+        </LinearLayout>
 
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
