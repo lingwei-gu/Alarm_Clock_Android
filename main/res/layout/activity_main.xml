@@ -11,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/logo"
@@ -42,39 +44,80 @@
             android:textSize="24sp"
             android:typeface="serif" />
 
-        <LinearLayout
-            android:id="@+id/layoutB"
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- android:paddingStart="110dp"
+    android:paddingEnd ="110dp"-->
+
+
+        <Spinner
+            android:id="@+id/hours_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center" />
+
+        <Spinner
+            android:id="@+id/min_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center" />
+
+        <Spinner
+            android:id="@+id/am_pm_spinner"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutC"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/calc_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="100dp"
+            android:text="@string/calculate" />
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
+            android:text="@string/textView3"
+            android:textAlignment="center" />
 
-            <!-- android:paddingStart="110dp"
-        android:paddingEnd ="110dp"-->
-
-
-            <Spinner
-                android:id="@+id/hours_spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:gravity="center" />
-
-            <Spinner
-                android:id="@+id/min_spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:gravity="center" />
-
-            <Spinner
-                android:id="@+id/am_pm_spinner"
-                android:layout_width="124dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:gravity="center" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zzz"
+            android:layout_marginStart="125dp"/>
 
 
     </LinearLayout>

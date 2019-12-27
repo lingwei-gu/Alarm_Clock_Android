@@ -2,6 +2,11 @@
     <string name="app_name">My Application</string>
     <string name="sleep_cycles">Sleep Cycles</string>
     <string name="i_have_to_wake_up_at">I have to wake up at:</string>
+    <string name="calc_button">Button</string>
+    <string name="calculate">Calculate</string>
+    <string name="textview">TextView</string>
+    <string name="textView3"><![CDATA[or &#13;&#10; Find out when to get up if you go to bed now]]></string>
+    <string name="zzz">zzz</string>
 
     <string-array name="h_arr">
         <item>1</item>
