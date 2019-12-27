@@ -14,12 +14,11 @@ import android.content.Intent;
 import android.app.PendingIntent;
 import android.app.AlarmManager;
 import android.widget.Toast;
-import java.util.Calendar;
-import java.util.Date;
-import java.lang.String;
+
 
 public class MainActivity extends AppCompatActivity {
-    public static String[] timeSlot = new String[4];
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,21 +56,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button btnCalculate = (Button) findViewById(R.id.calc_button);
-        btnCalculate.setOnClickListener(new View.OnClickListener()
-        {
+        btnCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 OnCalculateClicked();
             }
         });
 
         Button btnZZZ = (Button) findViewById(R.id.button3);
-        btnZZZ.setOnClickListener(new View.OnClickListener()
-        {
+        btnZZZ.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 OnZZZClicked();
             }
         });
@@ -85,44 +80,31 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, "Timer set to " + 10 + " seconds.",
                 Toast.LENGTH_SHORT).show();
     }
-    public void setSpinner(Spinner spinner, int[] arr){
+
+    public void setSpinner(Spinner spinner, int[] arr) {
 
     }
 
-    private void OnCalculateClicked()
-    {
-        Log.d("-","btnCalculateClicked");
+    private void OnCalculateClicked() {
+        Log.d("-", "btnCalculateClicked");
         Intent ganesh = new Intent(this, SecondActivity.class);
         startActivity(ganesh);
     }
 
-    private void OnZZZClicked()
-    {
-        Log.d("-","btnZZZClicked");
-        Intent ganesh = new Intent(this, SecondActivity.class);
+    private void OnZZZClicked() {
+        Log.d("-", "btnZZZClicked");
+        Resources.storeToStrArr(Resources.timeZZZCalculate());
+        Intent ganesh = new Intent(this, ThirdActivity.class);
         startActivity(ganesh);
-
     }
 
-    public int[] timeZZZCalculate() {
-        Date date= new Date();
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(date);
 
-        String currentTimeAll = Calendar.getInstance().getTime().toString();
-        String currentTime = currentTimeAll.split(" ")[3];
-        int[] time = {Integer.parseInt(currentTime.split(":")[0]), //hour
-                        Integer.parseInt(currentTime.split(":")[1]), //minutes
-                        cal.get(Calendar.YEAR), //year
-                        cal.get(Calendar.MONTH), //month
-                        cal.get(Calendar.DATE), //date
-        };
-        return time;
-    }
+
 
     public static class AlarmReceiver extends BroadcastReceiver {
         public void onReceive(Context context, Intent intent) {
             Log.d("-", "Receiver3");
         }
     }
+
 }

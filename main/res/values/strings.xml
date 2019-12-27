@@ -8,6 +8,8 @@
     <string name="textView3"><![CDATA[or &#13;&#10; Find out when to get up if you go to bed now]]></string>
     <string name="zzz">zzz</string>
 
+    <string name="zzz_time_1"> </string>
+
     <string-array name="h_arr">
         <item>1</item>
         <item>2</item>
@@ -37,4 +39,6 @@
         <item>AM</item>
         <item>PM</item>
     </string-array>
+
+
 </resources>
