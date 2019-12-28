@@ -57,7 +57,7 @@ public class Resources {
 
             if(time_24[0] >= 24) {
                 time_24[0] += 1;
-                time_24[1] -= 60;
+                time_24[1] -= 24;
             }
 
             Resources.timeSlot[i] = standard2Strings(time_24);
