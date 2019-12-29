@@ -45,14 +45,14 @@ public class MainActivity extends AppCompatActivity {
         min_spinner.setAdapter(min_adapter);
 
 
-        Spinner spinner = (Spinner) findViewById(R.id.am_pm_spinner);
+        Spinner am_pm_spinner = (Spinner) findViewById(R.id.am_pm_spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> am_pm_adapter = ArrayAdapter.createFromResource(this,
                 R.array.am_pm_arr, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
         am_pm_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
-        spinner.setAdapter(am_pm_adapter);
+        am_pm_spinner.setAdapter(am_pm_adapter);
 
 
         Button btnCalculate = (Button) findViewById(R.id.calc_button);
@@ -71,12 +71,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Intent alarmIntent = new Intent(this, AlarmReceiver.class);
-        PendingIntent pending = PendingIntent.getBroadcast(this,
-                0, alarmIntent, 0);
-
-        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-        alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, 5000, pending);
 
         /*
         Intent intent = new Intent(MainActivity.this, AlarmReceiver.class);
@@ -90,12 +84,18 @@ public class MainActivity extends AppCompatActivity {
          */
     }
 
-    public void setSpinner(Spinner spinner, int[] arr) {
+    /*public void setSpinner(Spinner spinner, int[] arr) {
 
-    }
+    }*/
 
     private void OnCalculateClicked() {
         Log.d("-", "btnCalculateClicked");
+        // do something here
+        Spinner hour_spinner = (Spinner) findViewById(R.id.hours_spinner);
+        Spinner min_spinner = (Spinner) findViewById(R.id.min_spinner);
+        Spinner am_pm_spinner = (Spinner) findViewById(R.id.am_pm_spinner);
+        int[] timeArr = Resources.takeInput(hour_spinner,min_spinner,am_pm_spinner);
+        Resources.storeToStrArrBackwards(timeArr);
         Intent ganesh = new Intent(this, SecondActivity.class);
         startActivity(ganesh);
     }
@@ -107,12 +107,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(ganesh);
     }
 
-    public class AlarmReceiver extends BroadcastReceiver {
+   /* public class AlarmReceiver extends BroadcastReceiver {
         public void onReceive(Context context, Intent intent) {
             Log.d("-", "Receiver3");
             Intent ganesh = new Intent(MainActivity.this, ThirdActivity.class);
             startActivity(ganesh);
         }
-    }
+    } */
 
 }
