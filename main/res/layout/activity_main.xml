@@ -110,7 +110,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
 
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="200dp"
 
             android:background="@drawable/round_button"
             android:padding="25dp"
@@ -124,7 +124,7 @@
             android:text="@string/textView3"
             android:textAlignment="center"
             android:textColor="@color/lightBlue"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="25dp"
             android:textSize="40dp"
             />
 
@@ -137,7 +137,7 @@
             android:textAlignment="center"
             android:textSize="25dp"
             android:textColor="@color/lightBlue"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="25dp"
             />
 
         <Button
@@ -146,7 +146,7 @@
             android:layout_height="wrap_content"
             android:text="@string/zzz"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/round_button"
             android:padding="25dp"/>
 
