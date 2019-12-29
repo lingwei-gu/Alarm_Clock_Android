@@ -8,6 +8,7 @@
 
     <LinearLayout
         android:id="@+id/layoutA"
+        android:background = "@color/darkBlue"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -24,7 +25,7 @@
             android:lineSpacingExtra="8sp"
             android:text="@string/sleep_cycles"
             android:textAlignment="center"
-            android:textColor="#673AB7"
+            android:textColor="@color/lightBlue"
             android:textSize="30sp"
             android:typeface="serif"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +41,7 @@
             android:layout_height="wrap_content"
             android:text="@string/i_have_to_wake_up_at"
             android:textAlignment="center"
-            android:textColor="#673AB7"
+            android:textColor="@color/lightBlue"
             android:textSize="24sp"
             android:typeface="serif" />
 
@@ -57,7 +58,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <!-- android:paddingStart="110dp"
     android:paddingEnd ="110dp"-->
@@ -68,21 +70,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textColor="#FF0000"
+            />
 
         <Spinner
             android:id="@+id/min_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:gravity="center" />
+            android:gravity="center"
+            />
 
         <Spinner
             android:id="@+id/am_pm_spinner"
             android:layout_width="124dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:gravity="center" />
+            android:gravity="center"
+            />
 
     </LinearLayout>
 
@@ -110,7 +116,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/textView3"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/lightBlue"
+            />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textView4"
+            android:textAlignment="center"
+            android:textColor="@color/lightBlue"
+            />
 
         <Button
             android:id="@+id/button3"
