@@ -10,7 +10,7 @@
         android:layout_height="72dp"
         android:text="Try going to bed at the follwing times"
         android:textColor="@color/lightBlue"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:padding="16dp"
         />
 

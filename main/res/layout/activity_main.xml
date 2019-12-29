@@ -26,7 +26,7 @@
             android:text="@string/sleep_cycles"
             android:textAlignment="center"
             android:textColor="@color/lightBlue"
-            android:textSize="30sp"
+            android:textSize="35sp"
             android:typeface="serif"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -42,7 +42,7 @@
             android:text="@string/i_have_to_wake_up_at"
             android:textAlignment="center"
             android:textColor="@color/lightBlue"
-            android:textSize="24sp"
+            android:textSize="27sp"
             android:typeface="serif" />
 
 
@@ -53,7 +53,7 @@
         android:id="@+id/layoutB"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="50dp"
+        android:paddingLeft="50sp"
         android:paddingRight="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,6 +109,8 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="150dp"
             android:layout_marginRight="100dp"
+            android:background="@drawable/round_button"
+            android:padding="25dp"
             android:text="@string/calculate" />
 
         <TextView
@@ -118,6 +120,8 @@
             android:text="@string/textView3"
             android:textAlignment="center"
             android:textColor="@color/lightBlue"
+            android:layout_marginTop="120dp"
+            android:textSize="25dp"
             />
 
 
@@ -127,6 +131,7 @@
             android:layout_height="wrap_content"
             android:text="@string/textView4"
             android:textAlignment="center"
+            android:textSize="25dp"
             android:textColor="@color/lightBlue"
             />
 
@@ -135,7 +140,10 @@
             android:layout_width="146dp"
             android:layout_height="wrap_content"
             android:text="@string/zzz"
-            android:layout_marginStart="125dp"/>
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="125dp"
+            android:background="@drawable/round_button"
+            android:padding="25dp"/>
 
 
     </LinearLayout>
