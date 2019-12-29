@@ -7,12 +7,11 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="122dp"
+        android:padding="16dp"
         android:text="Try going to bed at the follwing times"
         android:textColor="@color/lightBlue"
-        android:textSize="17sp"
-        android:padding="16dp"
-        />
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/calc_button1"
@@ -20,8 +19,12 @@
         android:layout_height="wrap_content"
         android:text="Button"
         android:background="@drawable/round_button"
-        android:layout_margin="15dp"
-        android:padding="30dp"/>
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="30dp"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/calc_button2"
@@ -29,8 +32,9 @@
         android:layout_height="wrap_content"
         android:text="Button"
         android:background="@drawable/round_button"
-        android:layout_margin="15dp"
-        android:padding="30dp"/>
+        android:layout_margin="20dp"
+        android:padding="30dp"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/calc_button3"
@@ -38,8 +42,9 @@
         android:layout_height="wrap_content"
         android:text="Button"
         android:background="@drawable/round_button"
-        android:layout_margin="15dp"
-        android:padding="30dp"/>
+        android:layout_margin="20dp"
+        android:padding="30dp"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/calc_button4"
@@ -47,6 +52,7 @@
         android:layout_height="wrap_content"
         android:text="Button"
         android:background="@drawable/round_button"
-        android:layout_margin="15dp"
-        android:padding="30dp"/>
+        android:layout_margin="20dp"
+        android:padding="30dp"
+        android:textSize="20sp"/>
 </LinearLayout>

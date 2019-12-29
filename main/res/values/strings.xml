@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="sleep_cycles">Sleep Cycles</string>
+    <string name="app_name">Sleep Cycler</string>
+    <string name="sleep_cycles">Sleep Cycler</string>
     <string name="i_have_to_wake_up_at">I have to wake up at:</string>
     <string name="calc_button">Button</string>
     <string name="calculate">Calculate</string>

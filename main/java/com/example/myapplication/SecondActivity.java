@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.util.Log;
@@ -21,6 +22,7 @@ public class SecondActivity extends AppCompatActivity {
 
         Button button2 = (Button) findViewById(R.id.calc_button2);
         button2.setText(Resources.timeSlotBackwards[1]);
+
 
         Button button3 = (Button) findViewById(R.id.calc_button3);
         button3.setText(Resources.timeSlotBackwards[2]);

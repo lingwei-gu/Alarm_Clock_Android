@@ -14,8 +14,6 @@
         android:theme="@style/AppTheme">
 
 
-        <receiver android:name=".MainActivity$AlarmReceiver" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,12 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <receiver android:name=".AlarmReceiver" />
-
-        <service
-            android:name=".AlarmService"
-            android:exported="true" />
 
 
         <activity android:name=".SecondActivity">

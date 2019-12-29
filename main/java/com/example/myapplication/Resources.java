@@ -80,7 +80,7 @@ public class Resources {
 
     public static void storeToStrArrBackwards(int[] time) {
           // 14 mins to fall asleep
-        //time[1] = time[1] - 14;
+        time[1] = time[1] - 14;
         // 0 -> 3 cycles -> 4.5 hours
         // 1 -> 4 cycles -> 6 hours
         // 2 -> 5 cycles -> 7.5 hours

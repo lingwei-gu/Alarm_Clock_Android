@@ -26,8 +26,9 @@
             android:text="@string/sleep_cycles"
             android:textAlignment="center"
             android:textColor="@color/lightBlue"
-            android:textSize="35sp"
+            android:textSize="50sp"
             android:typeface="serif"
+            android:layout_marginTop="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -40,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/i_have_to_wake_up_at"
+            android:layout_marginTop="5dp"
             android:textAlignment="center"
             android:textColor="@color/lightBlue"
             android:textSize="27sp"
@@ -69,16 +71,15 @@
             android:id="@+id/hours_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="160dp"
             android:gravity="center"
-            android:textColor="#FF0000"
             />
 
         <Spinner
             android:id="@+id/min_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="160dp"
             android:gravity="center"
             />
 
@@ -86,7 +87,7 @@
             android:id="@+id/am_pm_spinner"
             android:layout_width="124dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="160dp"
             android:gravity="center"
             />
 
@@ -100,18 +101,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <Button
             android:id="@+id/calc_button"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginRight="100dp"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="220dp"
+
             android:background="@drawable/round_button"
             android:padding="25dp"
-            android:text="@string/calculate" />
+            android:text="@string/calculate"
+            />
 
         <TextView
             android:id="@+id/textView3"
@@ -120,8 +124,8 @@
             android:text="@string/textView3"
             android:textAlignment="center"
             android:textColor="@color/lightBlue"
-            android:layout_marginTop="120dp"
-            android:textSize="25dp"
+            android:layout_marginTop="40dp"
+            android:textSize="40dp"
             />
 
 
@@ -133,6 +137,7 @@
             android:textAlignment="center"
             android:textSize="25dp"
             android:textColor="@color/lightBlue"
+            android:layout_marginTop="50dp"
             />
 
         <Button
@@ -140,8 +145,8 @@
             android:layout_width="146dp"
             android:layout_height="wrap_content"
             android:text="@string/zzz"
-            android:layout_marginTop="70dp"
-            android:layout_marginStart="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
             android:background="@drawable/round_button"
             android:padding="25dp"/>
 

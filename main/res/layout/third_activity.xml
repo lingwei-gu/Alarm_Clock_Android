@@ -8,10 +8,10 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="122dp"
         android:text="@string/third_activity_text"
         android:textColor="@color/lightBlue"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:padding="16dp"/>
 
     <Button
@@ -19,30 +19,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
-        android:layout_margin="15dp"
-        android:padding="30dp"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="30dp"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/zzz_button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
-        android:layout_margin="15dp"
-        android:padding="30dp"/>
+        android:layout_margin="20dp"
+        android:padding="30dp"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/zzz_button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
-        android:layout_margin="15dp"
-        android:padding="30dp"/>
+        android:layout_margin="20dp"
+        android:padding="30dp"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/zzz_button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
-        android:layout_margin="15dp"
-        android:padding="30dp"/>
+        android:layout_margin="20dp"
+        android:padding="30dp"
+        android:textSize="20sp"/>
 </LinearLayout>
