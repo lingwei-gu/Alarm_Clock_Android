@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@color/darkBlue">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="Try going to bed at the follwing times"
+        android:textColor="@color/lightBlue"
+        android:textSize="20dp"
+        android:padding="16dp"
+        />
+
+    <Button
+        android:id="@+id/calc_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:background="@drawable/round_button"
+        android:layout_margin="15dp"
+        android:padding="30dp"/>
+
+    <Button
+        android:id="@+id/calc_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:background="@drawable/round_button"
+        android:layout_margin="15dp"
+        android:padding="30dp"/>
+
+    <Button
+        android:id="@+id/calc_button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:background="@drawable/round_button"
+        android:layout_margin="15dp"
+        android:padding="30dp"/>
+
+    <Button
+        android:id="@+id/calc_button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:background="@drawable/round_button"
+        android:layout_margin="15dp"
+        android:padding="30dp"/>
+</LinearLayout>
