@@ -1,20 +1,30 @@
 package com.example.myapplication;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import java.lang.String;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class ThirdActivity extends AppCompatActivity {
+public class ThirdActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.third_activity);
+        //Remove title bar
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        //Remove notification bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        this.setContentView(R.layout.third_activity);
 
         Button button1 = (Button)findViewById(R.id.zzz_button1);
         button1.setText(Resources.timeSlot[0]);
