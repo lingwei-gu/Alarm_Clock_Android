@@ -2,19 +2,14 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.graphics.Color;
+
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.content.Intent;
-import android.app.PendingIntent;
-import android.app.AlarmManager;
-import android.widget.Toast;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -73,17 +68,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        /*
-        Intent intent = new Intent(MainActivity.this, AlarmReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(MainActivity.this,
-                0, intent, 0);
-        ((AlarmManager) getSystemService(ALARM_SERVICE)).set(AlarmManager.RTC,
-                System.currentTimeMillis() + 10 * 1000, pendingIntent);
-        Toast.makeText(MainActivity.this, "Timer set to " + 10 + " seconds.",
-                Toast.LENGTH_SHORT).show();
-
-         */
     }
 
     /*public void setSpinner(Spinner spinner, int[] arr) {
@@ -91,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
     }*/
 
     private void OnCalculateClicked() {
-        Log.d("-", "btnCalculateClicked");
+        //Log.d("-", "btnCalculateClicked");
         // do something here
         Spinner hour_spinner = (Spinner) findViewById(R.id.hours_spinner);
         Spinner min_spinner = (Spinner) findViewById(R.id.min_spinner);
@@ -103,18 +87,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void OnZZZClicked() {
-        Log.d("-", "btnZZZClicked");
+        //Log.d("-", "btnZZZClicked");
         Resources.storeToStrArr(Resources.timeZZZCalculate());
         Intent ganesh = new Intent(this, ThirdActivity.class);
         startActivity(ganesh);
     }
 
-   /* public class AlarmReceiver extends BroadcastReceiver {
-        public void onReceive(Context context, Intent intent) {
-            Log.d("-", "Receiver3");
-            Intent ganesh = new Intent(MainActivity.this, ThirdActivity.class);
-            startActivity(ganesh);
-        }
-    } */
 
 }

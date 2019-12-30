@@ -1,10 +1,8 @@
 package com.example.myapplication;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.provider.AlarmClock;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -61,22 +59,22 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void OnButton1Clicked() {
-        Log.d("-", "button1Clicked");
+       // Log.d("-", "button1Clicked");
         setAlarm(timeSlotToInt(Resources.timeSlotBackwards[0])[0], timeSlotToInt(Resources.timeSlotBackwards[0])[1]);
     }
 
     private void OnButton2Clicked() {
-        Log.d("-", "button2Clicked");
+        //Log.d("-", "button2Clicked");
         setAlarm(timeSlotToInt(Resources.timeSlotBackwards[1])[0], timeSlotToInt(Resources.timeSlotBackwards[1])[1]);
     }
 
     private void OnButton3Clicked() {
-        Log.d("-", "button3Clicked");
+        //Log.d("-", "button3Clicked");
         setAlarm(timeSlotToInt(Resources.timeSlotBackwards[2])[0], timeSlotToInt(Resources.timeSlotBackwards[2])[1]);
     }
 
     private void OnButton4Clicked() {
-        Log.d("-", "button4Clicked");
+        //Log.d("-", "button4Clicked");
         setAlarm(timeSlotToInt(Resources.timeSlotBackwards[3])[0], timeSlotToInt(Resources.timeSlotBackwards[3])[1]);
     }
 

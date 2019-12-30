@@ -142,14 +142,6 @@ public class Resources {
             time = timeArr[0]+":"+timeArr[1];
         }
 
-        /*SimpleDateFormat date12Format = new SimpleDateFormat("h:mm a");
-        SimpleDateFormat date24Format = new SimpleDateFormat("HH:mm");
-        try {
-            return date24Format.format(date12Format.parse(time));
-        } catch (Exception exp) {
-            Log.d("***", exp.toString());
-        }
-        return "Error";*/
         return time;
     }
 

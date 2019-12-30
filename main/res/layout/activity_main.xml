@@ -133,12 +133,11 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:text="@string/textView4"
             android:textAlignment="center"
-            android:textSize="25dp"
             android:textColor="@color/lightBlue"
-            android:layout_marginTop="25dp"
-            />
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/button3"

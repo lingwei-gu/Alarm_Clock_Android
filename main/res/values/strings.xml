@@ -10,7 +10,9 @@
     <string name="zzz">zzz</string>
 
     <string name="zzz_time_1"> </string>
-    <string name="third_activity_text">You should wake up at the following times</string>
+    <string name="third_activity_text">Try waking up at the following times </string>
+    <string name="second_string">Try going to bed at the following times</string>
+    <string name="alarm">(Click to set alarm)</string>
 
     <string-array name="h_arr">
         <item>1</item>

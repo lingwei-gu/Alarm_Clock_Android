@@ -8,11 +8,21 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="122dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
         android:text="@string/third_activity_text"
         android:textColor="@color/lightBlue"
-        android:textSize="30dp"
-        android:padding="16dp"/>
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/alarm"
+        android:textColor="@color/lightBlue"
+        android:textSize="20sp" />
+
 
     <Button
         android:id="@+id/zzz_button1"

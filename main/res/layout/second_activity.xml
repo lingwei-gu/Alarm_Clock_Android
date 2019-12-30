@@ -7,11 +7,20 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="122dp"
+        android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Try going to bed at the follwing times"
+        android:text="@string/second_string"
         android:textColor="@color/lightBlue"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/alarm"
+        android:textColor="@color/lightBlue"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/calc_button1"
