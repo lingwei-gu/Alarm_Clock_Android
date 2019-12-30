@@ -1,19 +1,31 @@
 package com.example.myapplication;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.second_activity);
+        //Remove title bar
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        //Remove notification bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        //set content view AFTER ABOVE sequence (to avoid crash)
+        this.setContentView(R.layout.second_activity);
 
         Button button1 = (Button) findViewById(R.id.calc_button1);
         button1.setText(Resources.timeSlotBackwards[0]);
@@ -59,7 +71,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void OnButton1Clicked() {
-       // Log.d("-", "button1Clicked");
+        // Log.d("-", "button1Clicked");
         setAlarm(timeSlotToInt(Resources.timeSlotBackwards[0])[0], timeSlotToInt(Resources.timeSlotBackwards[0])[1]);
     }
 
